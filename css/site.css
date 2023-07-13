@@ -1,0 +1,207 @@
+:root {
+    /* fonts */
+    --wf-title-font: 'Bebas Neue', sans-serif;
+    --wf-subtitle-font: 'Fira Sans', sans-serif;
+    --wf-heading-font: 'Bebas Neue', sans-serif;
+    --wf-body-font: 'Roboto', sans-serif;
+
+    /* basic colors */
+    --wf-dark-color: #212121;
+    --wf-light-color: #deeefb;
+    --wf-background-color: rgba(250, 250, 250, 0.8);
+
+    /* text styles */
+    --wf-font-size: 1.2rem;
+    --wf-font-weight: 400;
+    --wf-line-height: 1.5rem;
+    --wf-title-color: var(--wf-dark-color);
+
+    /* Blue theme */
+    --wf-theme-core: #0d6efd;
+    --wf-theme-100: hsl(216, 50%, 91%);
+    --wf-theme-150: hsl(216, 50%, 86%);
+    --wf-theme-200: hsl(216, 50%, 81%);
+    --wf-theme-300: hsl(216, 50%, 71%);
+    --wf-theme-400: hsl(216, 50%, 61%);
+    --wf-theme-500: hsl(216, 50%, 51%);
+    --wf-theme-600: hsl(216, 50%, 41%);
+    --wf-theme-700: hsl(216, 50%, 31%);
+    --wf-theme-800: hsl(216, 50%, 21%);
+    --wf-theme-850: hsl(216, 50%, 16%);
+    --wf-theme-900: hsl(216, 50%, 11%);
+}
+
+/* Start: Element Overrides */
+body {
+    font-family: var(--wf-body-font);
+    font-size: var(--wf-font-size);
+    font-weight: var(--wf-font-weight);
+    line-height: var(--wf-line-height);
+    color: var(--wf-dark-color);
+    background: var(--wf-background-color);
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--wf-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--wf-title-color);
+    letter-spacing: .1rem;
+}
+
+a {
+    color: var(--wf-theme-500);
+}
+
+a:hover {
+    color: var(--wf-theme-400);
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--wf-theme-600);
+    --bs-btn-border-color: var(--wf-theme-600);
+    --bs-btn-hover-bg: var(--wf-theme-700);
+    --bs-btn-hover-border-color: var(--wf-theme-700);
+}
+
+/* END: Element Overrides */
+
+/* BEGIN: Home Section */
+
+#home {
+    background-color: var(--wf-theme-900);
+    background-image: url(/img/space_bg.jpg);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#homeCover {
+    backdrop-filter: brightness(0.35) blur(3px);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.mainLogo {
+    height: .5em;
+    padding-left: .08em;
+}
+
+.mainTitle,
+.subTitle {
+    color: var(--wf-light-color);
+    text-transform: uppercase
+}
+
+.mainTitle {
+    font-family: var(--wf-title-font);
+    font-size: 5rem;
+    line-height: 4rem;
+}
+
+.subTitle {
+    font-family: var(--wf-subTitle-font);
+    font-size: 1.28rem;
+    letter-spacing: .1rem;
+    line-height: 1.1rem;
+    font-weight: 300;
+}
+
+/* END: Home Section */
+
+/* BEGIN: Main Content */
+
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(even) {
+    background-color: var(--wf-theme-100);
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--wf-theme-150);
+}
+
+
+/* END: Main Content */
+
+/* START: Footer styles */
+.socialicons {
+    font-size: 2rem;
+    transition: color 0.25s;
+}
+
+.socialicons:hover {
+    color: var(--wf-theme-core);
+}
+
+footer.fixed-bottom {
+    background-color: var(--wf-theme-900);
+}
+
+footer .card {
+    background-color: var(--wf-theme-800);
+}
+
+/* END: Footer stles */
+
+/***** START: Media Queries *****/
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .mainTitle{
+        font-size: 7rem;
+        line-height: 5.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.7rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.18rem;
+        padding-top: .25rem;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
+
+/***** END: Media Queries *****/
