@@ -1,6 +1,6 @@
 :root {
     /* fonts */
-    --wf-title-font: 'Bebas Neue', sans-serif;
+    --wf-title-font: 'Raleway', sans-serif;
     --wf-subtitle-font: 'Fira Sans', sans-serif;
     --wf-heading-font: 'Bebas Neue', sans-serif;
     --wf-body-font: 'Roboto', sans-serif;
@@ -111,8 +111,9 @@ section {
 }
 
 .mainLogo {
-    height: .5em;
+    height: .7em;
     padding-left: .08em;
+    margin-bottom: .09em;
 }
 
 .mainTitle,
