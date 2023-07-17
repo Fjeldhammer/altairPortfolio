@@ -48,3 +48,7 @@
 .blog-day {
     font-size: 6rem;
 }
+
+.blog-article:nth-child(odd)>.blog-row {
+    flex-direction: row-reverse;
+}
