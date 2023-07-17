@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/css/hoverCard.css" />
     <link rel="stylesheet" href="/css/themes.css" />
     <link rel="stylesheet" href="/css/blogCard.css" />
+    <link rel="stylesheet" href="/css/menuPill.css" />
 
     <!--Favicon  -->
     <link rel="shortcut icon" href="img/Will icon wht.png" type="image/x-icon" />
@@ -38,7 +39,75 @@
 
 <body data-wf-theme="blue">
 
-    <main>
+    <div id="menuPillContainer" class="navbar navbar-dark">
+        <nav id="menuPill" class="navbar-nav text-light">
+            <div class="nav-item">
+                <a class="nav-link active" href="#home" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <span class="menu-label">Home</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="About Me" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </div>
+                    <span class="menu-label">About Me</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#skills" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Skills" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-wrench-adjustable"></i>
+                    </div>
+                    <span class="menu-label">Skills</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#projects" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Projects" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-braces-asterisk"></i>
+                    </div>
+                    <span class="menu-label">Projects</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#challenges" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Challenges" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-terminal"></i>
+                    </div>
+                    <span class="menu-label">Challenges</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#blog" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Blog" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <span class="menu-label">Blog</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#contact" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Contact" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </div>
+                    <span class="menu-label">Contact</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main data-bs-spy="scroll" data-bs-target="#menuPill">
 
         <section id="home">
             <div id="homeCover">
@@ -405,8 +474,7 @@
                             <div class="col-lg-4 blog-header">
                                 <!-- blog image -->
                                 <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" 
-                                        class="blog-image" alt="Blog post image" />
+                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Blog post image" />
                                 </a>
                                 <div class="blog-date">
                                     <div class="blog-day">11</div>
@@ -420,7 +488,7 @@
                                     <p class="card-text line-clamp">
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum enim magnam
                                         eligendi vitae a quo quia at quidem dicta odit? Dolorem voluptate perspiciatis
-                                        ducimus unde quod asperiores. Quis, temporibus 
+                                        ducimus unde quod asperiores. Quis, temporibus
                                     </p>
                                     <div>
                                         <a href="#" class="btn btn-primary">Read More</a>
@@ -437,8 +505,7 @@
                             <div class="col-lg-4 blog-header">
                                 <!-- blog image -->
                                 <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_Database.jpg" 
-                                        class="blog-image" alt="Blog post image" />
+                                    <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="Blog post image" />
                                 </a>
                                 <div class="blog-date">
                                     <div class="blog-day">12</div>
@@ -452,7 +519,7 @@
                                     <p class="card-text line-clamp">
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum enim magnam
                                         eligendi vitae a quo quia at quidem dicta odit? Dolorem voluptate perspiciatis
-                                        ducimus unde quod asperiores. Quis, temporibus 
+                                        ducimus unde quod asperiores. Quis, temporibus
                                     </p>
                                     <div>
                                         <a href="#" class="btn btn-primary">Read More</a>
@@ -469,8 +536,7 @@
                             <div class="col-lg-4 blog-header">
                                 <!-- blog image -->
                                 <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_CodeTag.jpg" 
-                                        class="blog-image" alt="Blog post image" />
+                                    <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Blog post image" />
                                 </a>
                                 <div class="blog-date">
                                     <div class="blog-day">13</div>
@@ -484,7 +550,7 @@
                                     <p class="card-text line-clamp">
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum enim magnam
                                         eligendi vitae a quo quia at quidem dicta odit? Dolorem voluptate perspiciatis
-                                        ducimus unde quod asperiores. Quis, temporibus 
+                                        ducimus unde quod asperiores. Quis, temporibus
                                     </p>
                                     <div>
                                         <a href="#" class="btn btn-primary">Read More</a>
@@ -501,8 +567,8 @@
                             <div class="col-lg-4 blog-header">
                                 <!-- blog image -->
                                 <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" 
-                                        class="blog-image" alt="Blog post image" />
+                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image"
+                                        alt="Blog post image" />
                                 </a>
                                 <div class="blog-date">
                                     <div class="blog-day">14</div>
@@ -516,7 +582,7 @@
                                     <p class="card-text line-clamp">
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum enim magnam
                                         eligendi vitae a quo quia at quidem dicta odit? Dolorem voluptate perspiciatis
-                                        ducimus unde quod asperiores. Quis, temporibus 
+                                        ducimus unde quod asperiores. Quis, temporibus
                                     </p>
                                     <div>
                                         <a href="#" class="btn btn-primary">Read More</a>
@@ -540,63 +606,33 @@
                     <div class="row row-cols-1 row-cols-md-2">
                         <div class="col">
                             <label for="FirstName" class="form-label">First Name</label>
-                            <input class="form-control"
-                                name="FirstName"
-                                id="FirstName"
-                                type="text"
-                                placeholder="First Name"
-                                aria-label="First name"
-                                required />
+                            <input class="form-control" name="FirstName" id="FirstName" type="text"
+                                placeholder="First Name" aria-label="First name" required />
                         </div>
                         <div class="col">
                             <label for="LastName" class="form-label">Last Name</label>
-                            <input class="form-control"
-                                name="LastName"
-                                id="LastName"
-                                type="text"
-                                placeholder="Last Name"
-                                aria-label="Last name"
-                                required />
+                            <input class="form-control" name="LastName" id="LastName" type="text"
+                                placeholder="Last Name" aria-label="Last name" required />
                         </div>
                         <div class="col">
                             <label for="Email" class="form-label">Email</label>
-                            <input class="form-control"
-                                name="Email"
-                                id="Email"
-                                type="Email"
-                                placeholder="Email"
-                                aria-label="Email"
-                                required />
+                            <input class="form-control" name="Email" id="Email" type="Email" placeholder="Email"
+                                aria-label="Email" required />
                         </div>
                         <div class="col">
                             <label for="Phone" class="form-label">Phone (optional)</label>
-                            <input class="form-control"
-                                name="Phone"
-                                id="Phone"
-                                type="tel"
-                                placeholder="Phone"
+                            <input class="form-control" name="Phone" id="Phone" type="tel" placeholder="Phone"
                                 aria-label="Phone" />
                         </div>
                         <div class="col col-md-12">
                             <label for="Subject" class="form-label">Subject</label>
-                            <input class="form-control"
-                                name="Subject"
-                                id="Subject"
-                                type="text"
-                                placeholder="Subject"
-                                aria-label="Subject"
-                                required />
+                            <input class="form-control" name="Subject" id="Subject" type="text" placeholder="Subject"
+                                aria-label="Subject" required />
                         </div>
                         <div class="col col-md-12">
                             <label for="Message" class="form-label">Message</label>
-                            <textarea class="form-control"
-                                name="Message"
-                                id="Message"
-                                type="text"
-                                placeholder="Message"
-                                aria-label="Message"
-                                required
-                                rows="4"></textarea>
+                            <textarea class="form-control" name="Message" id="Message" type="text" placeholder="Message"
+                                aria-label="Message" required rows="4"></textarea>
                         </div>
                         <div class="col-md-12 text-start">
                             <button type="Submit" class="btn btn-primary mt-2">
