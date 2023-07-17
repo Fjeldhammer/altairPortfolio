@@ -493,8 +493,10 @@ section {
 
 .section-page {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     position: relative;
+    overflow:visible;
+    margin-top: -3rem;
 }
 
 .section-page:nth-child(even),
@@ -514,9 +516,8 @@ section {
     left: 0;
     right: 0;
     height: 3rem;
-    border: solid 2px red;
-    background-color: rgba(250,0,0,0.5);
-    clip-path: ellipse(50% 100% at top center)
+    clip-path: ellipse(50% 100% at top center);
+    z-index: 1;
 }
 
 
