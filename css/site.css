@@ -79,7 +79,7 @@ section {
 
 #home {
     background-color: var(--wf-theme-900);
-    background-image: url(/img/will\ folio\ bg\ 5.jpg);
+    background-image: url(/img/will\ folio\ bg\ 1.jpg);
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
@@ -145,6 +145,7 @@ section {
 .section-page:nth-child(odd)>.container::after {
     background-color: var(--wf-theme-150);
 }
+
 /* section dividers */
 .section-page>.container::after {
     content: "";

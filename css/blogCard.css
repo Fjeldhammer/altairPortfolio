@@ -8,7 +8,7 @@
 .line-clamp {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -web-kit-line-clamp: 3;
+    -webkit-line-clamp: 3;
     line-clamp: 3;
     overflow: hidden;
 }
