@@ -71,6 +71,8 @@ section {
     --bs-btn-border-color: var(--wf-theme-600);
     --bs-btn-hover-bg: var(--wf-theme-700);
     --bs-btn-hover-border-color: var(--wf-theme-700);
+    --bs-btn-active-bg: var(--wf-theme-800);
+    --bs-btn-active-border-color: var(--wf-theme-800);
 }
 
 /* END: Element Overrides */
@@ -79,7 +81,7 @@ section {
 
 #home {
     background-color: var(--wf-theme-900);
-    background-image: url(/img/Willicons/will\ folio\ bg\ 6.jpg);
+    background-image: url(/img/Willicons/will\ folio\ bg\ 4.jpg);
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
@@ -87,7 +89,10 @@ section {
 }
 
 #homeCover {
-    backdrop-filter: brightness(0.5) blur(2px);
+    /* backdrop filter for Safari */
+    -webkit-backdrop-filter: brightness(0.35) blur(3px);
+    /* backdrop filter for other browsers */
+    backdrop-filter: brightness(0.5) blur(3px);
     height: 100%;
     width: 100%;
     position:absolute;
